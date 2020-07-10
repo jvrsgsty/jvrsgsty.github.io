@@ -28,6 +28,16 @@
   </url>
   
   <url>
+    <loc>https://www.javiersagastuy.com/tag/deep-learning/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.javiersagastuy.com/tag/icml/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.javiersagastuy.com/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
@@ -39,6 +49,11 @@
   
   <url>
     <loc>https://www.javiersagastuy.com/author/jon-bloom/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.javiersagastuy.com/tag/learning-rules/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -58,6 +73,11 @@
   </url>
   
   <url>
+    <loc>https://www.javiersagastuy.com/tags/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.javiersagastuy.com/publication/kunin-2020-two/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
@@ -67,19 +87,11 @@
   </url>
   
   <url>
-    <loc>https://www.javiersagastuy.com/author/javier-sagastuy-brena/</loc>
-  </url>
-  
-  <url>
     <loc>https://www.javiersagastuy.com/post/</loc>
   </url>
   
   <url>
     <loc>https://www.javiersagastuy.com/talk/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.javiersagastuy.com/tags/</loc>
   </url>
   
 </urlset>
