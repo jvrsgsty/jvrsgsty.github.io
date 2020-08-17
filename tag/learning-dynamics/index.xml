@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learning Dynamics | Javier Sagastuy</title>
+    <link>https://www.javiersagastuy.com/tag/learning-dynamics/</link>
+      <atom:link href="https://www.javiersagastuy.com/tag/learning-dynamics/index.xml" rel="self" type="application/rss+xml" />
+    <description>Learning Dynamics</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 12 Aug 2020 09:19:16 -0700</lastBuildDate>
+    <image>
+      <url>https://www.javiersagastuy.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Learning Dynamics</title>
+      <link>https://www.javiersagastuy.com/tag/learning-dynamics/</link>
+    </image>
+    
+    <item>
+      <title>Three Factors Influencing Minima in SGD</title>
+      <link>https://www.javiersagastuy.com/review/200812_three-factors-influencing-minima/</link>
+      <pubDate>Wed, 12 Aug 2020 09:19:16 -0700</pubDate>
+      <guid>https://www.javiersagastuy.com/review/200812_three-factors-influencing-minima/</guid>
+      <description>&lt;h3 id=&#34;review&#34;&gt;Review&lt;/h3&gt;
+&lt;h4 id=&#34;summary&#34;&gt;Summary&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;SGD performs similarly for different batch sizes, but a constant LR/BS ratio.&lt;/li&gt;
+&lt;li&gt;The authors note that SGD with the same LR/BS ratio are different discretizations of the same Stochastic Differential Equation.&lt;/li&gt;
+&lt;li&gt;LR schedules and BS schedules are interchangeable, what matters, again, is what the LR/BS looks like.&lt;/li&gt;
+&lt;li&gt;Width of minima is defined in terms of the trace of the Hessian $Tr(H)$ at the minima: lower trace = wider minima.
+&lt;ul&gt;
+&lt;li&gt;Assumption 1: At a local minima, loss surface approximated via a quadratic bowl. This lets training process be approximated by Orenstein-Unhlenbcek process.&lt;/li&gt;
+&lt;li&gt;Assumption 2: $H$ is approximated via the covariance matrix of the stochastic gradients ($H=C$ relies on $C$ being anisotropic).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Larger LR/BS correlates with wider minima, giving better generalization.&lt;/li&gt;
+&lt;li&gt;However, larger $\beta$, with constant $\frac{LR}{BS}=\frac{\beta \eta}{\beta S}$ causes the approximation to the SDE to break down, leading to lower performance.&lt;/li&gt;
+&lt;li&gt;Discretization errors become aparent at large learning rates.&lt;/li&gt;
+&lt;li&gt;Central Limit Theorem assumptions break down for small dataset, large batches.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spherical Motion Dynamics of Deep Neural Networks with Batch Normalization and Weight Decay</title>
+      <link>https://www.javiersagastuy.com/review/200724_spherical-motion-dynamics/</link>
+      <pubDate>Sat, 01 Aug 2020 09:19:16 -0700</pubDate>
+      <guid>https://www.javiersagastuy.com/review/200724_spherical-motion-dynamics/</guid>
+      <description>&lt;h3 id=&#34;review&#34;&gt;Review&lt;/h3&gt;
+&lt;h4 id=&#34;summary&#34;&gt;Summary&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Batch normalization induces scale invariance of the loss with respect to the weights (i.e. $L(x; \theta) = L(x; k \theta)$, for parameters $\theta$ with BN. This expression is not mathematically precise).&lt;/li&gt;
+&lt;li&gt;The scale invariance implies in $&amp;lt;\theta_t, \partial L / \partial \theta |_{\theta = \theta_t}&amp;gt; = 0$&lt;/li&gt;
+&lt;li&gt;A DNN trained with BN and WD using SDGM, with WD $\lambda$, Momentum $\alpha \geq 0$ and LR $\eta$ has an angular update $\Delta_t$ satisfying
+$$
+\lim_{t\rightarrow \infty}\Delta_t \simeq \sqrt{\dfrac{2\eta\lambda}{1+\alpha}}
+$$&lt;/li&gt;
+&lt;li&gt;At equilibrium, the &amp;ldquo;force&amp;rdquo; pulling the weights towards the origin (from the weight decay term) and the &amp;ldquo;force&amp;rdquo; pushing the weights orthogonally balance out, resulting in movement on the surface of a sphere, with a fixed angular update at every step in training.&lt;/li&gt;
+&lt;li&gt;Properties of Spherical Motion Dynamics:
+&lt;ul&gt;
+&lt;li&gt;Scale-invariant weights do not suffer from vanishing or exploding gradients.&lt;/li&gt;
+&lt;li&gt;SGDM cannot get trapped in local minima, since it guarantees an angular update size on $\mathcal{S}^{p-1}$.&lt;/li&gt;
+&lt;li&gt;With SGDM weights will not converge unless the LR $\eta$ is manually decreased.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;comments&#34;&gt;Comments&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The theory shown does not seem to consider the role of the batch size in the stochasticity of the training process.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The authors&amp;rsquo; discussion on the Linear Scaling Principle (rescaling the learning rate with the batch size) is not entirely clear to me. It seems the main takeaway is that when rescaling the LR by a factor of $k$ to use a batch size that is $k$ times larger, then the angular update is affected mainly by the change in the rescaling of the LR (which scales with $\sqrt k$).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The authors compare the angular update between $w_t$ and $w_{t+1}$ for the larger batch size against the cumulative angular update over $k$ steps for the smaller batch.  We interpret this to mean the angular update between $w_t$ and $w_{t+k}$, since we cannot say anything about the additivity of the angular updates.&lt;/li&gt;
+&lt;li&gt;The cummulative angular update for small batch is larger than the single step angular update for larger batch size. In fact, we can approximately observe:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+\dfrac{\Delta_t^{256}(w_t, w_{t+k})}{\Delta_t^{k256}(w_t, w_{t+1})} \lessapprox
+\sqrt k = \dfrac{\sqrt{2\eta\lambda/(1+\alpha)}}{\sqrt{2k\eta\lambda/(1+\alpha)}}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
