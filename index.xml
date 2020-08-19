@@ -5,12 +5,36 @@
     <link>https://www.javiersagastuy.com/</link>
       <atom:link href="https://www.javiersagastuy.com/index.xml" rel="self" type="application/rss+xml" />
     <description>Javier Sagastuy</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 12 Aug 2020 09:19:16 -0700</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 18 Aug 2020 09:19:16 -0700</lastBuildDate>
     <image>
       <url>https://www.javiersagastuy.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Javier Sagastuy</title>
       <link>https://www.javiersagastuy.com/</link>
     </image>
+    
+    <item>
+      <title>A Variational Analysis of Stochastic Gradient Algorithms</title>
+      <link>https://www.javiersagastuy.com/review/200818_variational-analysis-sgd/</link>
+      <pubDate>Tue, 18 Aug 2020 09:19:16 -0700</pubDate>
+      <guid>https://www.javiersagastuy.com/review/200818_variational-analysis-sgd/</guid>
+      <description>&lt;h3 id=&#34;review&#34;&gt;Review&lt;/h3&gt;
+&lt;h4 id=&#34;summary&#34;&gt;Summary&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;The authors expand on their 
+&lt;a href=&#34;https://opt-ml.org/papers/OPT2015_paper_8.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;previous work&lt;/a&gt; on the continuous time-limit of SGD. They show how SGD with a constant LR can be modelled as an SDE that reaches a stationary distribution. Further, if the loss function is interpreted as a log-posterior and make the goal to approximate the posterior as well as possible (in terms of KL divergence), the authors derive optimal hyperparameters.&lt;/li&gt;
+&lt;li&gt;4 key assumptions:
+&lt;ul&gt;
+&lt;li&gt;The gradient noise is Gaussian&lt;/li&gt;
+&lt;li&gt;The weight estimates are constrained to a small enough region of parameter space that the sampling noise covariance of the stochastic gradients is constant.&lt;/li&gt;
+&lt;li&gt;The step size is small enough that the discrete Markov Process can be approximated by a continuous time Markov process.&lt;/li&gt;
+&lt;li&gt;Lastly, the stationary distribution of the process has a closed form solution if we assume we can approximate the loss as a quadratic bowl (we are close to a local minima).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The authors show how this SDE view is related to stochastic gradient Fisher scoring.&lt;/li&gt;
+&lt;li&gt;The main practical contribution, is that this view provides a way to compute mathematically optimal hyperparameters for a small amount if data, in contrast to the computational burden of cross-validating parameters.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Three Factors Influencing Minima in SGD</title>

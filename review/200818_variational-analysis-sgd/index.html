@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="Javier Sagastuy Brena | Personal Page">
+  <meta name="description" content="Review Summary  The authors expand on their previous work on the continuous time-limit of SGD. They show how SGD with a constant LR can be modelled as an SDE that reaches a stationary distribution.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://www.javiersagastuy.com/publication-type/0/">
+  <link rel="alternate" hreflang="en-us" href="https://www.javiersagastuy.com/review/200818_variational-analysis-sgd/">
 
   
 
@@ -215,14 +215,12 @@
   
 
   
-  <link rel="alternate" href="/publication-type/0/index.xml" type="application/rss+xml" title="Javier Sagastuy">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.javiersagastuy.com/publication-type/0/">
+  <link rel="canonical" href="https://www.javiersagastuy.com/review/200818_variational-analysis-sgd/">
 
   
   
@@ -241,29 +239,34 @@
   <meta property="twitter:creator" content="@jvrsgsty">
   
   <meta property="og:site_name" content="Javier Sagastuy">
-  <meta property="og:url" content="https://www.javiersagastuy.com/publication-type/0/">
-  <meta property="og:title" content="0 | Javier Sagastuy">
-  <meta property="og:description" content="Javier Sagastuy Brena | Personal Page"><meta property="og:image" content="https://www.javiersagastuy.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="https://www.javiersagastuy.com/review/200818_variational-analysis-sgd/">
+  <meta property="og:title" content="A Variational Analysis of Stochastic Gradient Algorithms | Javier Sagastuy">
+  <meta property="og:description" content="Review Summary  The authors expand on their previous work on the continuous time-limit of SGD. They show how SGD with a constant LR can be modelled as an SDE that reaches a stationary distribution."><meta property="og:image" content="https://www.javiersagastuy.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://www.javiersagastuy.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2020-08-18T09:19:16-07:00">
+    
+      <meta property="article:published_time" content="2020-08-18T09:19:16-07:00">
+    
+    <meta property="article:modified_time" content="2020-08-18T09:19:16-07:00">
   
 
   
 
 
 
-
   
 
 
   
 
 
+  
 
 
 
-  <title>0 | Javier Sagastuy</title>
+
+
+  <title>A Variational Analysis of Stochastic Gradient Algorithms | Javier Sagastuy</title>
 
 </head>
 
@@ -495,6 +498,86 @@
 </nav>
 
 
+  <div class="pub">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>A Variational Analysis of Stochastic Gradient Algorithms</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+    <div>
+      Stephan Mandt, Matthew D. Hoffman, David M. Blei
+    </div>
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    
+      Published February 2016
+      <br />
+      Read on Aug 18, 2020
+    
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
   
 
 
@@ -504,71 +587,304 @@
 
 
 
-
-
-
-
-  
-
-  
-  
   
     
   
-<div class="universal-wrapper pt-3">
-  <h1>0</h1>
 
-  
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/abs/1602.02666" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
+  <div class="article-container">
+
+    
+    <h3> TL;DR </h3>
+    <p class="pub-abstract">Rethinking SGD in the limit of continuous time yields valuable insight, particularly on hyperparameter tuning. This paper introduces the SDE derivation in the previously reviewed &lsquo;Three Factors&rsquo; paper, and elaborates on the minimization of the KL divergence of the stationary distribution of the underlying OU process and the target posterior (and as such relies on the Bayesian view on ML algorithms, rather than the optimization view).</p>
+    
+
+    
+
+    
+
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"><h3 id="review">Review</h3>
+<h4 id="summary">Summary</h4>
+<ul>
+<li>The authors expand on their 
+<a href="https://opt-ml.org/papers/OPT2015_paper_8.pdf" target="_blank" rel="noopener">previous work</a> on the continuous time-limit of SGD. They show how SGD with a constant LR can be modelled as an SDE that reaches a stationary distribution. Further, if the loss function is interpreted as a log-posterior and make the goal to approximate the posterior as well as possible (in terms of KL divergence), the authors derive optimal hyperparameters.</li>
+<li>4 key assumptions:
+<ul>
+<li>The gradient noise is Gaussian</li>
+<li>The weight estimates are constrained to a small enough region of parameter space that the sampling noise covariance of the stochastic gradients is constant.</li>
+<li>The step size is small enough that the discrete Markov Process can be approximated by a continuous time Markov process.</li>
+<li>Lastly, the stationary distribution of the process has a closed form solution if we assume we can approximate the loss as a quadratic bowl (we are close to a local minima).</li>
+</ul>
+</li>
+<li>The authors show how this SDE view is related to stochastic gradient Fisher scoring.</li>
+<li>The main practical contribution, is that this view provides a way to compute mathematically optimal hyperparameters for a small amount if data, in contrast to the computational burden of cross-validating parameters.</li>
+</ul>
+</div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
   
+  <a class="badge badge-light" href="/tag/learning-dynamics/">Learning Dynamics</a>
+  
+  <a class="badge badge-light" href="/tag/theory/">Theory</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://www.javiersagastuy.com/review/200818_variational-analysis-sgd/&amp;text=A%20Variational%20Analysis%20of%20Stochastic%20Gradient%20Algorithms" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://www.javiersagastuy.com/review/200818_variational-analysis-sgd/&amp;t=A%20Variational%20Analysis%20of%20Stochastic%20Gradient%20Algorithms" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=A%20Variational%20Analysis%20of%20Stochastic%20Gradient%20Algorithms&amp;body=https://www.javiersagastuy.com/review/200818_variational-analysis-sgd/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://www.javiersagastuy.com/review/200818_variational-analysis-sgd/&amp;title=A%20Variational%20Analysis%20of%20Stochastic%20Gradient%20Algorithms" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=A%20Variational%20Analysis%20of%20Stochastic%20Gradient%20Algorithms%20https://www.javiersagastuy.com/review/200818_variational-analysis-sgd/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://www.javiersagastuy.com/review/200818_variational-analysis-sgd/&amp;title=A%20Variational%20Analysis%20of%20Stochastic%20Gradient%20Algorithms" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
   
+    
+    
+
+
+
+
+
   
     
     
     
-    <div>
-      <h2><a href="/review/200818_variational-analysis-sgd/" >A Variational Analysis of Stochastic Gradient Algorithms</a></h2>
-      <div class="article-style">
+      
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
         
-          Review Summary  The authors expand on their previous work on the continuous time-limit of SGD. They show how SGD with a constant LR can be modelled as an SDE that reaches a stationary distribution.
-        
+        <img class="avatar mr-3 avatar-circle" src="/author/javier-sagastuy-brena/avatar_hu9b0f8bb253e05019c90db04f5e18e7c9_1175816_270x270_fill_q90_lanczos_center.jpg" alt="Javier Sagastuy-Brena">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="https://www.javiersagastuy.com/">Javier Sagastuy-Brena</a></h5>
+        <h6 class="card-subtitle">PhD Candidate at Stanford University</h6>
+        <p class="card-text">Ski, code, eat, sleep, repeat.</p>
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/jvrsgsty/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/jvrsgsty" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=dtlIL-IAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/jvrsgsty" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
       </div>
     </div>
   
-    
-    
-    
-    <div>
-      <h2><a href="/review/200812_three-factors-influencing-minima/" >Three Factors Influencing Minima in SGD</a></h2>
-      <div class="article-style">
-        
-          Review Summary  SGD performs similarly for different batch sizes, but a constant LR/BS ratio. The authors note that SGD with the same LR/BS ratio are different discretizations of the same Stochastic Differential Equation.
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/review/200724_spherical-motion-dynamics/" >Spherical Motion Dynamics of Deep Neural Networks with Batch Normalization and Weight Decay</a></h2>
-      <div class="article-style">
-        
-          Review Summary  Batch normalization induces scale invariance of the loss with respect to the weights (i.e. $L(x; \theta) = L(x; k \theta)$, for parameters $\theta$ with BN. This expression is not mathematically precise).
-        
-      </div>
-    </div>
-  
+
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
 </div>
 
       
