@@ -5,12 +5,53 @@
     <link>https://www.javiersagastuy.com/tag/theory/</link>
       <atom:link href="https://www.javiersagastuy.com/tag/theory/index.xml" rel="self" type="application/rss+xml" />
     <description>Theory</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 18 Aug 2020 09:19:16 -0700</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 28 Aug 2020 19:19:16 -0700</lastBuildDate>
     <image>
       <url>https://www.javiersagastuy.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Theory</title>
       <link>https://www.javiersagastuy.com/tag/theory/</link>
     </image>
+    
+    <item>
+      <title>Stochastic gradient descent performs variational inference, converges to limit cycles for deep networks</title>
+      <link>https://www.javiersagastuy.com/review/200828_sg-performs-variational-inference-limit-cycles/</link>
+      <pubDate>Fri, 28 Aug 2020 19:19:16 -0700</pubDate>
+      <guid>https://www.javiersagastuy.com/review/200828_sg-performs-variational-inference-limit-cycles/</guid>
+      <description>&lt;h3 id=&#34;review&#34;&gt;Review&lt;/h3&gt;
+&lt;h4 id=&#34;summary&#34;&gt;Summary&lt;/h4&gt;
+&lt;h5 id=&#34;variantional-inference&#34;&gt;Variantional inference&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Proof that SGD minimizes a potential along with an entropic regularization term.&lt;/li&gt;
+&lt;li&gt;However, this potential differs from the loss used to compute backpropagation gradients. They are only equal if the gradient noise were isotropic (i.e. a constant multiple of the identity).&lt;/li&gt;
+&lt;li&gt;The gradient noise is highly non-isotropic with a very low rank covariance matrix.&lt;/li&gt;
+&lt;li&gt;The locations in weight space to which SGD &amp;ldquo;converges&amp;rdquo; are not true local minima of the original loss:&lt;/li&gt;
+&lt;li&gt;Their SDE analysis does not make the same assumptions as previous papers (e.g. quadratic approximation of the loss), even though the SDE they analyze is the same as in the papers I recently reviewed (albeit with different notation). Instead, they show how the continuous-time limit of SGD evolves according to the Fokker-Planck equation.
+&lt;ul&gt;
+&lt;li&gt;No quadratic assumption on loss&lt;/li&gt;
+&lt;li&gt;No constant covariance (thought experiments show it does not change much)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The practical implications of their analysis are:
+&lt;ul&gt;
+&lt;li&gt;The LR should scale linearly with BS to generalize well.&lt;/li&gt;
+&lt;li&gt;Sampling with replacement is better than without replacement, since the diffusion matrix (i.e. correlation matrix), with a more prononced effect at larger batches.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;limit-cycles&#34;&gt;Limit Cycles&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;In a vicinity of a critical point, the weights do not present Brownian motion, rather they have a deterministic component generating loops in weight space.&lt;/li&gt;
+&lt;li&gt;Relevant observables shown:
+&lt;ul&gt;
+&lt;li&gt;Eigenvalue spectra of covariance matrices over time (does not change much), along with mean and std of eigenvalues, as well as rank. These quantities inform the performance of a given architecture on a dataset.&lt;/li&gt;
+&lt;li&gt;Fast Fourier Transform of weights over time (should be constant in Brownian motion case).&lt;/li&gt;
+&lt;li&gt;Auto-correlation of weights (should quickly decay to zero in Brownian motion case).&lt;/li&gt;
+&lt;li&gt;Dimension-normalized gradient norm: they observe it does not decrease wrt the number of epochs and even shows a growing trend. This is justified by the presence of a non-zero force $j(x)$ which is responsible for theobserved Fourier harmonics.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>A Variational Analysis of Stochastic Gradient Algorithms</title>
