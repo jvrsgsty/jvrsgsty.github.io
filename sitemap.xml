@@ -3,22 +3,87 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.javiersagastuy.com/publication-type/0/</loc>
-    <lastmod>2020-08-28T19:19:16-07:00</lastmod>
+    <loc>https://www.javiersagastuy.com/publication-type/1/</loc>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.javiersagastuy.com/authors/</loc>
-    <lastmod>2020-08-28T19:19:16-07:00</lastmod>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.javiersagastuy.com/tag/conservation-laws/</loc>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.javiersagastuy.com/author/daniel-kunin/</loc>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.javiersagastuy.com/author/daniel-lk-yamins/</loc>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.javiersagastuy.com/tag/deep-learning/</loc>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.javiersagastuy.com/author/hidenori-tanaka/</loc>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.javiersagastuy.com/</loc>
-    <lastmod>2020-08-28T19:19:16-07:00</lastmod>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.javiersagastuy.com/author/javier-sagastuy-brena/</loc>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.javiersagastuy.com/publication/kunin-2020-neural/</loc>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.javiersagastuy.com/publication_types/</loc>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.javiersagastuy.com/publication/</loc>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.javiersagastuy.com/author/surya-ganguli/</loc>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.javiersagastuy.com/tag/symmetry/</loc>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.javiersagastuy.com/tags/</loc>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.javiersagastuy.com/tag/theory/</loc>
+    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.javiersagastuy.com/publication-type/0/</loc>
     <lastmod>2020-08-28T19:19:16-07:00</lastmod>
   </url>
   
@@ -33,27 +98,12 @@
   </url>
   
   <url>
-    <loc>https://www.javiersagastuy.com/publication_types/</loc>
-    <lastmod>2020-08-28T19:19:16-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.javiersagastuy.com/tag/sde/</loc>
     <lastmod>2020-08-28T19:19:16-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.javiersagastuy.com/review/200828_sg-performs-variational-inference-limit-cycles/</loc>
-    <lastmod>2020-08-28T19:19:16-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.javiersagastuy.com/tags/</loc>
-    <lastmod>2020-08-28T19:19:16-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.javiersagastuy.com/tag/theory/</loc>
     <lastmod>2020-08-28T19:19:16-07:00</lastmod>
   </url>
   
@@ -78,27 +128,7 @@
   </url>
   
   <url>
-    <loc>https://www.javiersagastuy.com/publication-type/1/</loc>
-    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.javiersagastuy.com/author/aran-nayebi/</loc>
-    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.javiersagastuy.com/author/daniel-kunin/</loc>
-    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.javiersagastuy.com/author/daniel-lk-yamins/</loc>
-    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.javiersagastuy.com/tag/deep-learning/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -114,16 +144,6 @@
   
   <url>
     <loc>https://www.javiersagastuy.com/tag/learning-rules/</loc>
-    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.javiersagastuy.com/publication/</loc>
-    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.javiersagastuy.com/author/surya-ganguli/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   

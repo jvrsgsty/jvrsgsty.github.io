@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="The neural plausibility of backpropagation has long been disputed, primarily for its use of non-local weight transport - the biologically dubious requirement that one neuron instantaneously measure the synaptic weights of another. Until recently, attempts to create local learning rules that avoid weight transport have typically failed in the large-scale learning scenarios where backpropagation shines, e.g. ImageNet categorization with deep convolutional networks. Here, we investigate a recently proposed local learning rule that yields competitive performance with backpropagation and find that it is highly sensitive to metaparameter choices, requiring laborious tuning that does not transfer across network architecture. Our analysis indicates the underlying mathematical reason for this instability, allowing us to identify a more robust local learning rule that better transfers without metaparameter tuning. Nonetheless, we find a performance and stability gap between this local rule and backpropagation that widens with increasing model depth. We then investigate several non-local learning rules that relax the need for instantaneous weight transport into a more biologically-plausible &#39;weight estimation&#39; process, showing that these rules match state-of-the-art performance on deep networks and operate effectively in the presence of noisy updates. Taken together, our results suggest two routes towards the discovery of neural implementations for credit assignment without weight symmetry: further improvement of local rules so that they perform consistently across architectures and the identification of biological implementations for non-local learning mechanisms.">
+  <meta name="description" content="Predicting the dynamics of neural network parameters during training is one of the key challenges in building a theoretical foundation for deep learning. A central obstacle is that the motion of a network in high-dimensional parameter space undergoes discrete finite steps along complex stochastic gradients derived from real-world datasets. We circumvent this obstacle through a unifying theoretical framework based on intrinsic symmetries embedded in a network&#39;s architecture that are present for any dataset. We show that any such symmetry imposes stringent geometric constraints on gradients and Hessians, leading to an associated conservation law in the continuous-time limit of stochastic gradient descent (SGD), akin to Noether&#39;s theorem in physics. We further show that finite learning rates used in practice can actually break these symmetry induced conservation laws. We apply tools from finite difference methods to derive modified gradient flow, a differential equation that better approximates the numerical trajectory taken by SGD at finite learning rates. We combine modified gradient flow with our framework of symmetries to derive exact integral expressions for the dynamics of certain parameter combinations. We empirically validate our analytic predictions for learning dynamics on VGG-16 trained on Tiny ImageNet. Overall, by exploiting symmetry, our work demonstrates that we can analytically describe the learning dynamics of various parameter combinations at finite learning rates and batch sizes for state of the art architectures trained on any dataset. ">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://www.javiersagastuy.com/publication/kunin-2020-two/">
+  <link rel="alternate" hreflang="en-us" href="https://www.javiersagastuy.com/publication/kunin-2020-neural/">
 
   
 
@@ -220,7 +220,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://www.javiersagastuy.com/publication/kunin-2020-two/">
+  <link rel="canonical" href="https://www.javiersagastuy.com/publication/kunin-2020-neural/">
 
   
   
@@ -239,15 +239,15 @@
   <meta property="twitter:creator" content="@jvrsgsty">
   
   <meta property="og:site_name" content="Javier Sagastuy">
-  <meta property="og:url" content="https://www.javiersagastuy.com/publication/kunin-2020-two/">
-  <meta property="og:title" content="Two Routes to Scalable Credit Assignment without Weight Symmetry | Javier Sagastuy">
-  <meta property="og:description" content="The neural plausibility of backpropagation has long been disputed, primarily for its use of non-local weight transport - the biologically dubious requirement that one neuron instantaneously measure the synaptic weights of another. Until recently, attempts to create local learning rules that avoid weight transport have typically failed in the large-scale learning scenarios where backpropagation shines, e.g. ImageNet categorization with deep convolutional networks. Here, we investigate a recently proposed local learning rule that yields competitive performance with backpropagation and find that it is highly sensitive to metaparameter choices, requiring laborious tuning that does not transfer across network architecture. Our analysis indicates the underlying mathematical reason for this instability, allowing us to identify a more robust local learning rule that better transfers without metaparameter tuning. Nonetheless, we find a performance and stability gap between this local rule and backpropagation that widens with increasing model depth. We then investigate several non-local learning rules that relax the need for instantaneous weight transport into a more biologically-plausible &#39;weight estimation&#39; process, showing that these rules match state-of-the-art performance on deep networks and operate effectively in the presence of noisy updates. Taken together, our results suggest two routes towards the discovery of neural implementations for credit assignment without weight symmetry: further improvement of local rules so that they perform consistently across architectures and the identification of biological implementations for non-local learning mechanisms."><meta property="og:image" content="https://www.javiersagastuy.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="https://www.javiersagastuy.com/publication/kunin-2020-neural/">
+  <meta property="og:title" content="Neural Mechanics: Symmetry and Broken Conservation Laws in Deep Learning Dynamics | Javier Sagastuy">
+  <meta property="og:description" content="Predicting the dynamics of neural network parameters during training is one of the key challenges in building a theoretical foundation for deep learning. A central obstacle is that the motion of a network in high-dimensional parameter space undergoes discrete finite steps along complex stochastic gradients derived from real-world datasets. We circumvent this obstacle through a unifying theoretical framework based on intrinsic symmetries embedded in a network&#39;s architecture that are present for any dataset. We show that any such symmetry imposes stringent geometric constraints on gradients and Hessians, leading to an associated conservation law in the continuous-time limit of stochastic gradient descent (SGD), akin to Noether&#39;s theorem in physics. We further show that finite learning rates used in practice can actually break these symmetry induced conservation laws. We apply tools from finite difference methods to derive modified gradient flow, a differential equation that better approximates the numerical trajectory taken by SGD at finite learning rates. We combine modified gradient flow with our framework of symmetries to derive exact integral expressions for the dynamics of certain parameter combinations. We empirically validate our analytic predictions for learning dynamics on VGG-16 trained on Tiny ImageNet. Overall, by exploiting symmetry, our work demonstrates that we can analytically describe the learning dynamics of various parameter combinations at finite learning rates and batch sizes for state of the art architectures trained on any dataset. "><meta property="og:image" content="https://www.javiersagastuy.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://www.javiersagastuy.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2020-07-09T20:23:32&#43;00:00">
+      <meta property="article:published_time" content="2020-12-09T20:23:32&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-03-01T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2020-12-09T00:00:00&#43;00:00">
   
 
   
@@ -269,12 +269,12 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.javiersagastuy.com/publication/kunin-2020-two/"
+    "@id": "https://www.javiersagastuy.com/publication/kunin-2020-neural/"
   },
-  "headline": "Two Routes to Scalable Credit Assignment without Weight Symmetry",
+  "headline": "Neural Mechanics: Symmetry and Broken Conservation Laws in Deep Learning Dynamics",
   
-  "datePublished": "2020-07-09T20:23:32Z",
-  "dateModified": "2020-03-01T00:00:00Z",
+  "datePublished": "2020-12-09T20:23:32Z",
+  "dateModified": "2020-12-09T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -289,7 +289,7 @@
       "url": "https://www.javiersagastuy.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "The neural plausibility of backpropagation has long been disputed, primarily for its use of non-local weight transport - the biologically dubious requirement that one neuron instantaneously measure the synaptic weights of another. Until recently, attempts to create local learning rules that avoid weight transport have typically failed in the large-scale learning scenarios where backpropagation shines, e.g. ImageNet categorization with deep convolutional networks. Here, we investigate a recently proposed local learning rule that yields competitive performance with backpropagation and find that it is highly sensitive to metaparameter choices, requiring laborious tuning that does not transfer across network architecture. Our analysis indicates the underlying mathematical reason for this instability, allowing us to identify a more robust local learning rule that better transfers without metaparameter tuning. Nonetheless, we find a performance and stability gap between this local rule and backpropagation that widens with increasing model depth. We then investigate several non-local learning rules that relax the need for instantaneous weight transport into a more biologically-plausible 'weight estimation' process, showing that these rules match state-of-the-art performance on deep networks and operate effectively in the presence of noisy updates. Taken together, our results suggest two routes towards the discovery of neural implementations for credit assignment without weight symmetry: further improvement of local rules so that they perform consistently across architectures and the identification of biological implementations for non-local learning mechanisms."
+  "description": "Predicting the dynamics of neural network parameters during training is one of the key challenges in building a theoretical foundation for deep learning. A central obstacle is that the motion of a network in high-dimensional parameter space undergoes discrete finite steps along complex stochastic gradients derived from real-world datasets. We circumvent this obstacle through a unifying theoretical framework based on intrinsic symmetries embedded in a network's architecture that are present for any dataset. We show that any such symmetry imposes stringent geometric constraints on gradients and Hessians, leading to an associated conservation law in the continuous-time limit of stochastic gradient descent (SGD), akin to Noether's theorem in physics. We further show that finite learning rates used in practice can actually break these symmetry induced conservation laws. We apply tools from finite difference methods to derive modified gradient flow, a differential equation that better approximates the numerical trajectory taken by SGD at finite learning rates. We combine modified gradient flow with our framework of symmetries to derive exact integral expressions for the dynamics of certain parameter combinations. We empirically validate our analytic predictions for learning dynamics on VGG-16 trained on Tiny ImageNet. Overall, by exploiting symmetry, our work demonstrates that we can analytically describe the learning dynamics of various parameter combinations at finite learning rates and batch sizes for state of the art architectures trained on any dataset. "
 }
 </script>
 
@@ -307,7 +307,7 @@
 
 
 
-  <title>Two Routes to Scalable Credit Assignment without Weight Symmetry | Javier Sagastuy</title>
+  <title>Neural Mechanics: Symmetry and Broken Conservation Laws in Deep Learning Dynamics | Javier Sagastuy</title>
 
 </head>
 
@@ -560,7 +560,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Two Routes to Scalable Credit Assignment without Weight Symmetry</h1>
+  <h1>Neural Mechanics: Symmetry and Broken Conservation Laws in Deep Learning Dynamics</h1>
 
   
 
@@ -579,7 +579,7 @@
       
 
   
-  <span >Daniel Kunin</span>, <span >Aran Nayebi</span>, <span ><a href="/author/javier-sagastuy-brena/">Javier Sagastuy-Brena</a></span>, <span >Surya Ganguli</span>, <span >Jon Bloom</span>, <span >Daniel LK Yamins</span>
+  <span >Daniel Kunin</span>, <span ><a href="/author/javier-sagastuy-brena/">Javier Sagastuy-Brena</a></span>, <span >Surya Ganguli</span>, <span >Daniel LK Yamins</span>, <span >Hidenori Tanaka</span>
     </div>
     
     
@@ -592,7 +592,7 @@
       
     
     
-      March 2020
+      December 2020
     
   </span>
   
@@ -638,7 +638,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/abs/2003.01513" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/abs/2012.04728" target="_blank" rel="noopener">
   Preprint
 </a>
 
@@ -651,14 +651,14 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1" href="http://proceedings.mlr.press/v119/kunin20a.html" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/pdf/2012.04728.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
 <button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
-        data-filename="/publication/kunin-2020-two/cite.bib">
+        data-filename="/publication/kunin-2020-neural/cite.bib">
   Cite
 </button>
 
@@ -667,7 +667,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/neuroailab/neural-alignment" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/danielkunin/neural-mechanics" target="_blank" rel="noopener">
   Code
 </a>
 
@@ -677,14 +677,6 @@
 
 
 
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1" href="https://icml.cc/virtual/2020/poster/6706" target="_blank" rel="noopener">
-  Slides
-</a>
 
 
 
@@ -704,7 +696,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">The neural plausibility of backpropagation has long been disputed, primarily for its use of non-local weight transport - the biologically dubious requirement that one neuron instantaneously measure the synaptic weights of another. Until recently, attempts to create local learning rules that avoid weight transport have typically failed in the large-scale learning scenarios where backpropagation shines, e.g. ImageNet categorization with deep convolutional networks. Here, we investigate a recently proposed local learning rule that yields competitive performance with backpropagation and find that it is highly sensitive to metaparameter choices, requiring laborious tuning that does not transfer across network architecture. Our analysis indicates the underlying mathematical reason for this instability, allowing us to identify a more robust local learning rule that better transfers without metaparameter tuning. Nonetheless, we find a performance and stability gap between this local rule and backpropagation that widens with increasing model depth. We then investigate several non-local learning rules that relax the need for instantaneous weight transport into a more biologically-plausible &lsquo;weight estimation&rsquo; process, showing that these rules match state-of-the-art performance on deep networks and operate effectively in the presence of noisy updates. Taken together, our results suggest two routes towards the discovery of neural implementations for credit assignment without weight symmetry: further improvement of local rules so that they perform consistently across architectures and the identification of biological implementations for non-local learning mechanisms.</p>
+    <p class="pub-abstract">Predicting the dynamics of neural network parameters during training is one of the key challenges in building a theoretical foundation for deep learning. A central obstacle is that the motion of a network in high-dimensional parameter space undergoes discrete finite steps along complex stochastic gradients derived from real-world datasets. We circumvent this obstacle through a unifying theoretical framework based on intrinsic symmetries embedded in a network&rsquo;s architecture that are present for any dataset. We show that any such symmetry imposes stringent geometric constraints on gradients and Hessians, leading to an associated conservation law in the continuous-time limit of stochastic gradient descent (SGD), akin to Noether&rsquo;s theorem in physics. We further show that finite learning rates used in practice can actually break these symmetry induced conservation laws. We apply tools from finite difference methods to derive modified gradient flow, a differential equation that better approximates the numerical trajectory taken by SGD at finite learning rates. We combine modified gradient flow with our framework of symmetries to derive exact integral expressions for the dynamics of certain parameter combinations. We empirically validate our analytic predictions for learning dynamics on VGG-16 trained on Tiny ImageNet. Overall, by exploiting symmetry, our work demonstrates that we can analytically describe the learning dynamics of various parameter combinations at finite learning rates and batch sizes for state of the art architectures trained on any dataset.</p>
     
 
     
@@ -734,7 +726,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">ICML 2020</div>
+          <div class="col-12 col-md-9">arXiv</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -755,11 +747,13 @@
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tag/icml/">ICML</a>
-  
-  <a class="badge badge-light" href="/tag/learning-rules/">Learning Rules</a>
-  
   <a class="badge badge-light" href="/tag/deep-learning/">Deep Learning</a>
+  
+  <a class="badge badge-light" href="/tag/theory/">Theory</a>
+  
+  <a class="badge badge-light" href="/tag/symmetry/">Symmetry</a>
+  
+  <a class="badge badge-light" href="/tag/conservation-laws/">Conservation Laws</a>
   
 </div>
 
@@ -776,7 +770,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.javiersagastuy.com/publication/kunin-2020-two/&amp;text=Two%20Routes%20to%20Scalable%20Credit%20Assignment%20without%20Weight%20Symmetry" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://www.javiersagastuy.com/publication/kunin-2020-neural/&amp;text=Neural%20Mechanics:%20Symmetry%20and%20Broken%20Conservation%20Laws%20in%20Deep%20Learning%20Dynamics" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -789,7 +783,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.javiersagastuy.com/publication/kunin-2020-two/&amp;t=Two%20Routes%20to%20Scalable%20Credit%20Assignment%20without%20Weight%20Symmetry" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://www.javiersagastuy.com/publication/kunin-2020-neural/&amp;t=Neural%20Mechanics:%20Symmetry%20and%20Broken%20Conservation%20Laws%20in%20Deep%20Learning%20Dynamics" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -802,7 +796,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Two%20Routes%20to%20Scalable%20Credit%20Assignment%20without%20Weight%20Symmetry&amp;body=https://www.javiersagastuy.com/publication/kunin-2020-two/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Neural%20Mechanics:%20Symmetry%20and%20Broken%20Conservation%20Laws%20in%20Deep%20Learning%20Dynamics&amp;body=https://www.javiersagastuy.com/publication/kunin-2020-neural/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -815,7 +809,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.javiersagastuy.com/publication/kunin-2020-two/&amp;title=Two%20Routes%20to%20Scalable%20Credit%20Assignment%20without%20Weight%20Symmetry" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://www.javiersagastuy.com/publication/kunin-2020-neural/&amp;title=Neural%20Mechanics:%20Symmetry%20and%20Broken%20Conservation%20Laws%20in%20Deep%20Learning%20Dynamics" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -828,7 +822,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Two%20Routes%20to%20Scalable%20Credit%20Assignment%20without%20Weight%20Symmetry%20https://www.javiersagastuy.com/publication/kunin-2020-two/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Neural%20Mechanics:%20Symmetry%20and%20Broken%20Conservation%20Laws%20in%20Deep%20Learning%20Dynamics%20https://www.javiersagastuy.com/publication/kunin-2020-neural/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -841,7 +835,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.javiersagastuy.com/publication/kunin-2020-two/&amp;title=Two%20Routes%20to%20Scalable%20Credit%20Assignment%20without%20Weight%20Symmetry" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://www.javiersagastuy.com/publication/kunin-2020-neural/&amp;title=Neural%20Mechanics:%20Symmetry%20and%20Broken%20Conservation%20Laws%20in%20Deep%20Learning%20Dynamics" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -858,17 +852,6 @@
 
 
 
-
-
-  
-    
-    
-
-
-
-
-
-  
 
 
   
@@ -1035,7 +1018,15 @@
     <h3>Related</h3>
     <ul>
       
-      <li><a href="/publication/kunin-2020-neural/">Neural Mechanics: Symmetry and Broken Conservation Laws in Deep Learning Dynamics</a></li>
+      <li><a href="/publication/kunin-2020-two/">Two Routes to Scalable Credit Assignment without Weight Symmetry</a></li>
+      
+      <li><a href="/review/200818_variational-analysis-sgd/">A Variational Analysis of Stochastic Gradient Algorithms</a></li>
+      
+      <li><a href="/review/200828_sg-performs-variational-inference-limit-cycles/">Stochastic gradient descent performs variational inference, converges to limit cycles for deep networks</a></li>
+      
+      <li><a href="/review/200812_three-factors-influencing-minima/">Three Factors Influencing Minima in SGD</a></li>
+      
+      <li><a href="/review/200724_spherical-motion-dynamics/">Spherical Motion Dynamics of Deep Neural Networks with Batch Normalization and Weight Decay</a></li>
       
     </ul>
   </div>
