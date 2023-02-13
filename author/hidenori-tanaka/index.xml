@@ -5,12 +5,20 @@
     <link>https://www.javiersagastuy.com/author/hidenori-tanaka/</link>
       <atom:link href="https://www.javiersagastuy.com/author/hidenori-tanaka/index.xml" rel="self" type="application/rss+xml" />
     <description>Hidenori Tanaka</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 09 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 19 Jul 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://www.javiersagastuy.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Hidenori Tanaka</title>
       <link>https://www.javiersagastuy.com/author/hidenori-tanaka/</link>
     </image>
+    
+    <item>
+      <title>Limiting Dynamics of SGD: Modified Loss, Phase Space Oscillations, and Anomalous Diffusion</title>
+      <link>https://www.javiersagastuy.com/publication/kunin-2021-limiting/</link>
+      <pubDate>Mon, 19 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://www.javiersagastuy.com/publication/kunin-2021-limiting/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Neural Mechanics: Symmetry and Broken Conservation Laws in Deep Learning Dynamics</title>

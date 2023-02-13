@@ -5,12 +5,72 @@
     <link>https://www.javiersagastuy.com/publication-type/0/</link>
       <atom:link href="https://www.javiersagastuy.com/publication-type/0/index.xml" rel="self" type="application/rss+xml" />
     <description>0</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 28 Aug 2020 19:19:16 -0700</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 07 Feb 2021 09:19:16 -0700</lastBuildDate>
     <image>
       <url>https://www.javiersagastuy.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>0</title>
       <link>https://www.javiersagastuy.com/publication-type/0/</link>
     </image>
+    
+    <item>
+      <title>Generalized Shape Metrics on Neural Representations</title>
+      <link>https://www.javiersagastuy.com/review/220201_generalized-shape-metrics-neural/</link>
+      <pubDate>Sun, 07 Feb 2021 09:19:16 -0700</pubDate>
+      <guid>https://www.javiersagastuy.com/review/220201_generalized-shape-metrics-neural/</guid>
+      <description>&lt;h3 id=&#34;review&#34;&gt;Review&lt;/h3&gt;
+&lt;h4 id=&#34;summary&#34;&gt;Summary&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;The authors build on ideas from the statistical shape analysis literature to
+develop similarity measures that are metrics: that are positive, symmetric and
+respect the triangle inequality.&lt;/li&gt;
+&lt;li&gt;They highlight how quantifying the similatiry between matrices of high dimensional
+vectors in $\mathbb R^n$ over a set of $m$ reference stimuli is complicated.&lt;/li&gt;
+&lt;li&gt;Previous approaches include PLS regressiom (which is asymmetric), CCA, CKA,
+and RSA (which are symmetric, but do not satisfy the triangle inequality), among others.&lt;/li&gt;
+&lt;li&gt;The authors define representations as equivalent if they are linearly mappable
+to each other within a set of allowable transformations $\mathcal G$, and highlight
+that nonlinear mappings may be achieved by preprocessing the features with a
+nonlinear function.&lt;/li&gt;
+&lt;li&gt;$\mathcal G$ is normally the set of orthogonal transforms with determinant of 1,
+but here the authors generalize this to suit the use case of quantifying dissimilarity
+in neural representations.
+&lt;ul&gt;
+&lt;li&gt;In particular, they propose $\mathcal G$ be the group of linear isometries,
+i.e. distance-preserving transforms, which turns out to be a subgroup of the
+set of orthogonal transformations (without the det = 1 condition).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Dependig on the desired notion of representational simlilarity, the authors exhibit how
+to define certain metrics where similarity can be assesed:
+&lt;ul&gt;
+&lt;li&gt;Up to permutation (linear ssignment problem)&lt;/li&gt;
+&lt;li&gt;Up to rotation (orthogonal Procrustes problem)&lt;/li&gt;
+&lt;li&gt;Up to a an affine transform (related to CCA)&lt;/li&gt;
+&lt;li&gt;Up to nonlinear transforms (in the appendix, related to CKA)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The authors also define a metric for convolutional layers that leverages the
+spatial structure of conv layers and relies the group of circular shifts and
+Kronecker products.&lt;/li&gt;
+&lt;li&gt;The authors present some experimental results on neural mouse data and NAS-Bench-101 data:
+&lt;ul&gt;
+&lt;li&gt;They show how trinagle inequality violations occur in practice (though not always, depending on the dataset) for commonly
+used simmilarity measures, and that generalized shape metrics correct for this.&lt;/li&gt;
+&lt;li&gt;They show that neural representation metric spaces can be embeded in Euclidean
+spaces but suggest using a higher number of embedding dimensions than what is normally
+used.&lt;/li&gt;
+&lt;li&gt;They show such embeddings of neural data preserve neural hierarchy structure and
+are scientifically interpretable.&lt;/li&gt;
+&lt;li&gt;They show that in artificial NNs, the representations show consistent structure across layers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;comments&#34;&gt;Comments&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Stochastic gradient descent performs variational inference, converges to limit cycles for deep networks</title>

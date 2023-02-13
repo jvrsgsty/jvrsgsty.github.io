@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Daniel M Bear | Javier Sagastuy</title>
+    <link>https://www.javiersagastuy.com/author/daniel-m-bear/</link>
+      <atom:link href="https://www.javiersagastuy.com/author/daniel-m-bear/index.xml" rel="self" type="application/rss+xml" />
+    <description>Daniel M Bear</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 14 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.javiersagastuy.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Daniel M Bear</title>
+      <link>https://www.javiersagastuy.com/author/daniel-m-bear/</link>
+    </image>
+    
+    <item>
+      <title>Recurrent Connections in the Primate Ventral Visual Stream Mediate a Trade-Off Between Task Performance and Network Size During Core Object Recognition</title>
+      <link>https://www.javiersagastuy.com/publication/nayebi-2022-recurrent/</link>
+      <pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.javiersagastuy.com/publication/nayebi-2022-recurrent/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

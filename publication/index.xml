@@ -5,12 +5,36 @@
     <link>https://www.javiersagastuy.com/publication/</link>
       <atom:link href="https://www.javiersagastuy.com/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 09 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 25 Aug 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://www.javiersagastuy.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Publications</title>
       <link>https://www.javiersagastuy.com/publication/</link>
     </image>
+    
+    <item>
+      <title>Modelling inter-animal variability</title>
+      <link>https://www.javiersagastuy.com/publication/sagastuy-2022-interanimal/</link>
+      <pubDate>Thu, 25 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.javiersagastuy.com/publication/sagastuy-2022-interanimal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recurrent Connections in the Primate Ventral Visual Stream Mediate a Trade-Off Between Task Performance and Network Size During Core Object Recognition</title>
+      <link>https://www.javiersagastuy.com/publication/nayebi-2022-recurrent/</link>
+      <pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.javiersagastuy.com/publication/nayebi-2022-recurrent/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Limiting Dynamics of SGD: Modified Loss, Phase Space Oscillations, and Anomalous Diffusion</title>
+      <link>https://www.javiersagastuy.com/publication/kunin-2021-limiting/</link>
+      <pubDate>Mon, 19 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://www.javiersagastuy.com/publication/kunin-2021-limiting/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Neural Mechanics: Symmetry and Broken Conservation Laws in Deep Learning Dynamics</title>
